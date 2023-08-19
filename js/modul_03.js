@@ -276,6 +276,32 @@
 // Значення вкладеної властивості password - це рядок "jqueryismyjam"
 
 
+// const emailInputName = "email";
+// const passwordInputName = "password";
+
+// const credentials = {
+//  [emailInputName]: "henry.carter@aptmail.com",
+//   [passwordInputName]: "jqueryismyjam",
+ 
+
+
+//   // Change code above this line
+// };
+
+// ***************************************************************************
+// 10.
+// Перебери об'єкт apartment, використовуючи цикл for...in, і запиши в масив keys всі його ключі, а в масив values всі значення його властивостей.
+
+// Оголошена змінна apartment
+// Значення змінної apartment - це об'єкт
+// Оголошена змінна keys
+// Значення змінної keys - це масив ["descr", "rating", "price"]
+// Оголошена змінна values
+// Значення змінної values - це масив ["Spacious apartment in the city center", 4, 2153]
+
+ 
+
+
 
 
 
