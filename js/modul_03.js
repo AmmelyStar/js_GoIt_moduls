@@ -299,6 +299,29 @@
 // Оголошена змінна values
 // Значення змінної values - це масив ["Spacious apartment in the city center", 4, 2153]
 
+
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// const keys = [];
+// const values = [];
+
+// for (let key in apartment) {
+//   keys.push(key);
+
+// }
+// for (let value in apartment) {
+//   values.push(apartment[value]);
+
+// }
+
+
+
+
+
+
  
 
 
