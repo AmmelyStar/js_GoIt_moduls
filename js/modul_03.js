@@ -744,14 +744,195 @@
 // }
 
 // ***************************************************************************
-25.
+// 25.Ми отримали прогноз погоди на два дні, з мінімальними і максимальними температурами, а також необов'язковими іконками. Заміни оголошення всіх змінних однією операцією деструктуризації властивостей об'єкта forecast. Задай значення за замовчуванням для іконок, змінних todayIcon і tomorrowIcon - рядок "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg".
+
+// Оголошена змінна forecast
+// Значення змінної forecast - це об'єкт
+// Оголошена змінна highToday за допомогою деструктуризації
+// Значення змінної highToday - це число 32
+// Оголошена змінна lowToday за допомогою деструктуризації
+// Значення змінної lowToday - це число 28
+// Оголошена змінна todayIcon за допомогою деструктуризації
+// Значення змінної todayIcon - це рядок "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg"
+// Оголошена змінна highTomorrow за допомогою деструктуризації
+// Значення змінної highTomorrow - це число 31
+// Оголошена змінна lowTomorrow за допомогою деструктуризації
+// Значення змінної lowTomorrow - це число 27
+// Оголошена змінна tomorrowIcon за допомогою деструктуризації
+// Значення змінної tomorrowIcon - це рядок "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg"
+// Використовується синтаксис деструктуризації об'єкта highTemperatures
+
+
+// const forecast = {
+//   today: {
+//     low: 28,
+//     high: 32,
+//     icon: "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
+//   },
+//   tomorrow: {
+//     low: 27,
+//     high: 31,
+//   },
+// };
+// // Change code below this line
+// const {today:
+//        {low: lowToday,
+//         high: highToday,
+//         icon: todayIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg"}, tomorrow: {low: lowTomorrow,
+//     high: highTomorrow, icon: tomorrowIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg"
+// },} = forecast;
+
+
+
 // ***************************************************************************
+// 26.
+// Функція calculateMeanTemperature(forecast) приймає один параметр forecast - об'єкт температур на два дні наступного формату.
+
+// {
+//   today: { low: 10, high: 20 },
+//   tomorrow: { low: 20, high: 30 }
+// }
+// Заміни оголошення змінних todayLow, todayHigh, tomorrowLow і tomorrowHigh однією операцією деструктуризації властивостей об'єкта forecast.
+
+// Оголошена функція calculateMeanTemperature(forecast)
+// В тілі функції використовується деструктуризація об'єкта
+// В тілі функції оголошена змінна todayHigh за допомогою деструктуризації
+// В тілі функції оголошена змінна todayLow за допомогою деструктуризації
+// В тілі функції оголошена змінна tomorrowLow за допомогою деструктуризації
+// В тілі функції оголошена змінна tomorrowHigh за допомогою деструктуризації
+// Виклик calculateMeanTemperature({ today: {low: 28, high: 32}, tomorrow: {low: 25, high: 29} }) повертає 28.5
+// Виклик calculateMeanTemperature({ today: { low: 37, high: 40 }, tomorrow: { low: 33, high: 38 } }) повертає 37
+
+// // Change code below this line
+// function calculateMeanTemperature(forecast) {
+//   const {today:{low: todayLow , high: todayHigh},  tomorrow:{low: tomorrowLow, high: tomorrowHigh}, } = forecast;
+  
+
+//   // Change code above this line
+//   return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
+// }
+
 // ***************************************************************************
+// 27.У змінній scores зберігається масив результатів тестування. Використовуючи розподіл і методи Math.max() і Math.min(), доповни код таким чином, щоб у змінній bestScore був найвищий бал, а у worstScore - найнижчий.
+
+// Оголошена змінна scores
+// Значення змінної scores - це масив [89, 64, 42, 17, 93, 51, 26]
+// Оголошена змінна bestScore
+// Значення змінної bestScore - це число 93
+// Оголошена змінна worstScore
+// Значення змінної worstScore - це число 17
+// Для передачі аргументів методу Math.max() використовується синтаксис ... на масиві scores
+// Для передачі аргументів методу Math.min() використовується синтаксис ... на масиві scores
+
+// const scores = [89, 64, 42, 17, 93, 51, 26];
+// // Change code below this line
+// const bestScore = Math.max(...scores);
+// const worstScore = Math.min(...scores);
+
+
+
 // ***************************************************************************
+// 28.
+// У змінних firstGroupScores, secondGroupScores і thirdGroupScores зберігаються результати тестування окремих груп. Використовуючи розподіл, доповни код таким чином, щоб:
+
+// У змінній allScores зберігався масив всіх результатів від першої до третьої групи.
+// У змінній bestScore був найвищий загальний бал.
+// У змінній worstScore був найнижчий загальний бал.
+// Оголошена змінна firstGroupScores
+// Значення змінної firstGroupScores - це масив [64, 42, 93]
+// Оголошена змінна secondGroupScores
+// Значення змінної secondGroupScores - це масив [89, 14, 51, 26]
+// Оголошена змінна thirdGroupScores
+// Значення змінної thirdGroupScores - це масив [29, 47, 18, 97, 81]
+// Оголошена змінна allScores.
+// Значення змінної allScores - це масив [64, 42, 93, 89, 14, 51, 26, 29, 47, 18, 97, 81]
+// Оголошена змінна bestScore
+// Значення змінної bestScore - це число 97
+// Оголошена змінна worstScore
+// Значення змінної worstScore - це число 14
+// Для присвоєння значення змінної allScores використовувався синтаксис ... для заповнення масиву
+// Для передачі аргументів методу Math.max() використовується синтаксис ... на масиві allScores
+// Для передачі аргументів методу Math.min() використовується синтаксис ... на масиві allScores
+
+// const firstGroupScores = [64, 42, 93];
+// const secondGroupScores = [89, 14, 51, 26];
+// const thirdGroupScores = [29, 47, 18, 97, 81];
+// // Change code below this line
+// const allScores = [...firstGroupScores, ...secondGroupScores, ...thirdGroupScores];
+// const bestScore = Math.max(...allScores);
+// const worstScore = Math.min(...allScores);
+
 // ***************************************************************************
+// 29.
+
+// В конструкторі можна створювати нові тести, для яких є налаштування за замовчуванням, які зберігаються у змінній defaultSettings. Під час створення тесту, усі або частину налаштувань можна перевизначити, вони зберігаються у змінній overrideSettings.
+
+// Для того щоб отримати фінальні налаштування тесту, необхідно взяти налаштування за замовчуванням і поверх них застосувати перевизначені налаштування. Доповни код таким чином, щоб у змінній finalSettings утворився об'єкт фінальних налаштувань тесту.
+
+// Оголошена змінна defaultSettings
+// Значення змінної defaultSettings - це об'єкт
+// Оголошена змінна overrideSettings
+// Значення змінної overrideSettings - це об'єкт
+// Оголошена змінна finalSettings
+// Значення змінної finalSettings - це об'єкт
+// Значення властивості finalSettings.theme дорівнює "light"
+// Значення властивості finalSettings.public дорівнює "false"
+// Значення властивості finalSettings.withPassword дорівнює "true"
+// Значення властивості finalSettings.minNumberOfQuestions дорівнює 10
+// Значення властивості finalSettings.timePerQuestion дорівнює 30
+// Для присвоєння значення змінній finalSettings використовується синтаксис ...
+
+// const defaultSettings = {
+//   theme: "light",
+//   public: true,
+//   withPassword: false,
+//   minNumberOfQuestions: 10,
+//   timePerQuestion: 60,
+// };
+// const overrideSettings = {
+//   public: false,
+//   withPassword: true,
+//   timePerQuestion: 30,
+// };
+// // Change code below this line
+// const finalSettings = {...defaultSettings, ...overrideSettings};
+
 // ***************************************************************************
-// ***************************************************************************
-// ***************************************************************************
+// 30.
+    
+//     Напиши функцію makeTask(data) яка приймає один параметр data - об'єкт з наступними властивостями.
+
+// text - текст завдання.
+// category - категорія завдання.
+// priority - пріоритет завдання.
+// Функція повинна створити і повернути новий об'єкт завдання, не змінюючи напряму параметр data. У новому об'єкті повинна бути властивість completed, значення якої зберігається в однойменній локальній змінній.
+
+// В параметрі data гарантовано буде тільки властивість text, а інші дві, category і priority, можуть бути відсутніми. Тоді, в новому об'єкті завдання, у властивостях category і priority повинні бути значення за замовчуванням, що зберігаються в однойменних локальних змінних.
+
+// Оголошена функція makeTask(data)
+// Виклик makeTask({}) повертає { category: "General", priority: "Normal", completed: false }
+// Виклик makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }) повертає { category: "Homemade", priority: "Low", text: "Take out the trash", completed: false }
+// Виклик makeTask({ category: "Finance", text: "Take interest" }) повертає { category: "Finance", priority: "Normal", text: "Take interest", completed: false }
+// Виклик makeTask({ priority: "Low", text: "Choose shampoo" }) повертає { category: "General", priority: "Low", text: "Choose shampoo", completed: false }
+// Виклик makeTask({ text: "Buy bread" }) повертає { category: "General", priority: "Normal", text: "Buy bread", completed: false }
+
+// function makeTask(data) {
+//   const completed = false;
+//   const category = "General";
+//   const priority = "Normal";
+//   // Change code below this line
+//   const result = {
+//     text: data.text,
+//     category: data.category || category,
+//      priority: data.priority || priority,
+//     completed: completed,
+    
+//   };
+
+//   // Change code above this line
+// return result;
+// }
+
 // ***************************************************************************
 // 31.
 // Використовуючи операцію rest, доповни код функції add() таким чином, щоб вона приймала будь-яку кількість аргументів, рахувала і повертала їх суму.
@@ -1060,7 +1241,6 @@
 // Значення властивості atTheOldToad.updatePotionName - це метод об'єкта
 // Для вихідного об'єкта після виклику методу atTheOldToad.updatePotionName("Dragon breath", "Polymorth"), у властивості potions буде масив [{ name: "Speed potion", price: 460 }, { name: "Polymorth", price: 780 }, { name: "Stone skin", price: 520 } ]
 // Для вихідного об'єкта після виклику методу atTheOldToad.updatePotionName("Stone skin", "Invulnerability potion"), у властивості potions буде масив [{ name: "Speed potion", price: 460 }, { name: "Dragon breath", price: 780 }, { name: "Invulnerability potion", price: 520 } ]
-
 
 
 // const atTheOldToad = {
